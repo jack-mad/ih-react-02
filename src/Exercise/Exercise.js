@@ -96,15 +96,15 @@ export default function Exercise() {
                             (evt) => { handleSubmit(evt) }
                     }>
                         <div className="isolate -space-y-px rounded-md shadow-sm">
-                            <div className="relative border border-gray-300 rounded-md rounded-b-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
+                            <div className="relative border border-gray-300 rounded-md rounded-b-none px-3 py-2 ">
                                 <label for="name" className="block text-xs font-medium text-gray-700">Name</label>
                                 <input type="text" name="name" className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm" placeholder="Get lucky" onChange={(evt) => handleChange(evt)} value={newSingle.name} />
                             </div>
-                            <div className="relative border border-gray-300 px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
+                            <div className="relative border border-gray-300 px-3 py-2 ">
                                 <label for="job-title" className="block w-full text-xs font-medium text-gray-700">Artist</label>
                                 <input type="text" name="artist" className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm" placeholder="Daft punk" onChange={(evt) => handleChange(evt)} value={newSingle.artist} />
                             </div>
-                            <div className="relative border  border-gray-300 rounded-md rounded-t-none px-3 py-2 focus-within:z-10 focus-within:ring-1 focus-within:ring-indigo-600 focus-within:border-indigo-600">
+                            <div className="relative border  border-gray-300 rounded-md rounded-t-none px-3 py-2 ">
                                 <label for="job-title" className="block w-full text-xs font-medium text-gray-700">Album</label>
                                 <input type="text" name="album" className="block w-full border-0 p-0 text-gray-900 placeholder-gray-500 focus:ring-0 sm:text-sm" placeholder="Random Access Memories" onChange={(evt) => handleChange(evt)} value={newSingle.album} />
                             </div>
@@ -149,6 +149,7 @@ export default function Exercise() {
                                 <div key={index}>
                                     <li className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200">
                                         <div className="flex-1 flex flex-col p-8">
+                                            
                                             <h3 className="text-indigo-700 text-sm font-medium">{item.name}</h3>
                                             <dl className="mt-1 flex-grow flex flex-col justify-between">
                                                 <dd className="text-gray-900 text-sm">{item.artist}</dd>
